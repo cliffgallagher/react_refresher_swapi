@@ -3,7 +3,8 @@ import React from 'react';
 const InfoDisplay = (props) => {
     return (
         <div>
-            InfoDisplay
+            Name: {props.results.name}
+            Height: {props.results.height}
         </div>
     )
 }

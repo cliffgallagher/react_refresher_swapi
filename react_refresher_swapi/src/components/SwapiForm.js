@@ -16,6 +16,7 @@ const SwapiForm = (props) => {
         const info = data.results[0];
         //console.log(info);
         props.receiveFromSwapiForm(info);
+        setSearchName("");
     }
 
     return(

@@ -5,10 +5,11 @@ import InfoDisplay from './components/InfoDisplay';
 
 function App() {
 
-  const [results, setResults] = useState();
+  const [results, setResults] = useState({name: "Luke Skywalker", height: "meh"});
 
   const receiveFromSwapiForm = (info) => {
     console.log('info in app: ' + JSON.stringify(info));
+    setResults(info);
   }
 
   return (
