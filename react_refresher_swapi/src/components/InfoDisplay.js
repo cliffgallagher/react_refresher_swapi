@@ -1,9 +1,9 @@
 import React from 'react';
 
-const InfoDisplay = () => {
+const InfoDisplay = (props) => {
     return (
         <div>
-            Info Display
+            InfoDisplay
         </div>
     )
 }
