@@ -10,9 +10,9 @@ const SwapiForm = (props) => {
 
     const searchFormSubmitHandler = async (event) => {
         event.preventDefault();
-        const response = await fetch(`https://swapi.dev/api/people/?search=${searchName}`);
+        const response = await fetch(`/people/?search=${searchName}`);
         const data = await response.json();
-        //console.log(data);
+        console.log(data);
         const info = data.results[0];
         //console.log(info);
         props.receiveFromSwapiForm(info);
